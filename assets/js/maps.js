@@ -3,7 +3,7 @@ function initMap() {
     const centerMap = {
         lat: 51.454513, 
         long: -2.58791,
-    }
+    };
 
     const mapOptions = {
         center: centerMap,
