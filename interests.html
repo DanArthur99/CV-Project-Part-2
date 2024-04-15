@@ -94,7 +94,7 @@
                                     just for fun (or both). We have people who are part of other technical user groups
                                     such as
                                     Dublin ALT.NET, GameCraft, Python Ireland, Ruby Ireland and more.
-                                    <a href="https://codinggrace.com/" target="_blank">Coding Grace</a>
+                                    <a rel="noopener" href="https://codinggrace.com/" target="_blank">Coding Grace</a>
                                 </p>
                             </div>
                         </div>
@@ -112,7 +112,7 @@
                                     and support. We are a volunteer run organization with hundreds of people
                                     contributing
                                     to bring more amazing women into the world of technology.
-                                    <a href="https://djangogirls.org/" target="_blank">Django Girls</a>
+                                    <a rel="noopener" href="https://djangogirls.org/" target="_blank">Django Girls</a>
                                 </p>
                             </div>
                         </div>
@@ -130,7 +130,7 @@
                                     focus primarily on angularjs, react, node, hapiJS, espress, plain ole' JavaScript,
                                     HTML, and CSS, we encourage all local web professionals to join us for vivid
                                     discussions around technology across the stack in any language.
-                                    <a href="https://www.meetup.com/javascript-full-stack-development/"
+                                    <a rel="noopener" href="https://www.meetup.com/javascript-full-stack-development/"
                                         target="_blank">Full Stack NY</a>
                                 </p>
                             </div>
@@ -151,7 +151,7 @@
                                     those who want to learn about this emerging field which is fascinating as IoT makes
                                     use of a diverse range of technologies and has the promise to impact a vast number
                                     of vertical markets.
-                                    <a href="https://www.meetup.com/NYCIOT/" target="_blank">IoT Nation</a>
+                                    <a rel="noopener" href="https://www.meetup.com/NYCIOT/" target="_blank">IoT Nation</a>
                                 </p>
                             </div>
                         </div>
@@ -223,14 +223,10 @@
         </div>
 
     </footer>
-    <script>
-        (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
-          key: "AIzaSyAHEBijWpHCZ01qKwfmLcgBOqZbvDUZsjs",
-          v: "weekly",
-          // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
-          // Add other bootstrap parameters as needed, using camel case.
-        });
-      </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+    <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyAHEBijWpHCZ01qKwfmLcgBOqZbvDUZsjs", v: "weekly"});</script>
     <script src="assets/js/maps.js"></script>
 </body>
 
