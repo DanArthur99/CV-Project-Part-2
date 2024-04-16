@@ -393,8 +393,6 @@ button[type="submit"] {
     border: 1px solid #ccc;
 }
 
-
-
 /*--------------------------------------------Media Queries*/
 
 @media(min-width: 992px) {
