@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
     "@googlemaps/markerclusterer": "^2.5.3",
     "@octokit/rest": "^20.1.0",
     "axios": "^1.6.8",
